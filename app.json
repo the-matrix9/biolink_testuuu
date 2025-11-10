@@ -1,0 +1,37 @@
+{
+  "name": "Radhe Guardian Bot",
+  "description": "A powerful Telegram moderation bot built with Pyrogram and MongoDB.",
+  "repository": "https://github.com/<yourusername>/RadheGuardianBot",
+  "logo": "https://te.legra.ph/file/7d37c6403f1a3b94a8f67.jpg",
+  "keywords": ["telegram", "pyrogram", "bot", "moderation"],
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your Telegram API ID from https://my.telegram.org",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your Telegram API HASH from https://my.telegram.org",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather",
+      "required": true
+    },
+    "MONGO_URI": {
+      "description": "MongoDB URI",
+      "required": true
+    },
+    "DB_NAME": {
+      "description": "MongoDB database name",
+      "value": "radhe_db"
+    },
+    "BOT_OWNER": {
+      "description": "Telegram ID of bot owner",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    { "url": "heroku/python" }
+  ]
+}
