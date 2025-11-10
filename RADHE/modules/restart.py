@@ -7,7 +7,7 @@ from RADHE import app
 # Setup logging
 log = logging.getLogger("RADHE.modules.restart")
 
-OWNER_ID = int(os.getenv("BOT_OWNER", "0"))
+OWNER_ID = int(os.getenv("BOT_OWNER"))
 
 
 # ===============================
